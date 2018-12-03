@@ -5,6 +5,6 @@ test:
   stage: echo
   script:
     - echo $COMMIT
-    - touch test.txt
+    - rm -rf test.txt
     - sleep 300
     - exit
