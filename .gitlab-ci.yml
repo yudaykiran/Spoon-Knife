@@ -1,0 +1,8 @@
+stages:
+  - echo
+
+test:
+  stage: echo
+  script:
+    - echo $COMMIT
+    - exit
