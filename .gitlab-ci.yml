@@ -10,9 +10,7 @@ create:
     - mkdir -p test
     - ls
 delete:
-  stage: delete
+  stage: create
   script:
     - pwd
-    - ls
-    - rm -rf test
     - ls
