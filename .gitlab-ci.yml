@@ -1,10 +1,18 @@
 stages:
-  - echo
+  - create
+  - delete
 
-test:
-  stage: echo
+create:
+  stage: create
   script:
-    - echo $COMMIT
-    - rm -rf test.txt
-    - sleep 300
-    - exit
+    - pwd
+    - ls
+    - mkdir -p test
+    - ls
+delete:
+  stage: delete
+  script:
+    - pwd
+    - ls
+    - rm -rf test
+    - ls
